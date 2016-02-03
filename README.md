@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ## Run shapefile api script
 
 - Edit file: ```api_scripts/run_shapefile_script.py```
-- Update the ```__main__``` method to load a test file -- or other file
+- Update the ```__main__``` method to load a test shapefile file, from ```test_files```, or elsewhere
 - Run the script:
 
 ```
