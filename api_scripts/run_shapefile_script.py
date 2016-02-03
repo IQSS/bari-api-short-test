@@ -1,6 +1,4 @@
-import hashlib
-import json
-from os.path import basename, dirname, isfile, join
+from os.path import isfile
 import requests
 from datetime import datetime
 from cred_reader import GEONODE_SERVER, GEONODE_USERNAME, GEONODE_PASSWORD
