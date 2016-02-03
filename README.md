@@ -22,6 +22,7 @@ pip install -r requirements.txt
 - Run the script:
 
 ```
+cd api_scripts
 python run_shapefile_script.py
 ```
 
