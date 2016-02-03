@@ -56,6 +56,7 @@ def upload_lat_lng_file(title, file_fullpath, lat_lng_params, use_dataverse_api=
                 #timeout=1,
              )
     print r.text
+    #open('lat_lng_err.html', 'w').write(r.text)
     dashes()
     print 'Status code:', r.status_code
 
