@@ -60,3 +60,7 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
+
+shapefile_test/server_creds.json
+
+api_scripts/server_creds.json
