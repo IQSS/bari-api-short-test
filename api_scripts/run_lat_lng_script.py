@@ -26,7 +26,7 @@ def upload_lat_lng_file(title, file_fullpath, lat_lng_params, use_dataverse_api=
 
     if use_dataverse_api:
         # API endpoint
-        worldmap_url = GEONODE_SERVER + '/dataverse-tabular/api/upload-lat-lng/'
+        worldmap_url = GEONODE_SERVER + '/dataverse/api/tabular/upload-lat-lng/'
     else:
         # API endpoint
         worldmap_url = GEONODE_SERVER + '/datatables/api/upload_lat_lon/'
@@ -71,4 +71,4 @@ if __name__=='__main__':
     upload_lat_lng_file('Boston social disorder',
                     'test_files/coded_data_2008_10-tab.txt',
                     map_params,
-                    use_dataverse_api=False)
+                    use_dataverse_api=True)

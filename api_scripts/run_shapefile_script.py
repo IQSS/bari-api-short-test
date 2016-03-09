@@ -12,7 +12,7 @@ def upload_shapefile(title, file_fullpath):
 
     dv_info = DataverseTestInfo.get_test_info_dict(title, file_fullpath)
 
-    worldmap_url = GEONODE_SERVER + '/dataverse/import-shapefile/'
+    worldmap_url = GEONODE_SERVER + '/dataverse/api/import-shapefile/'
 
     files = {'file': open( file_fullpath, 'rb')}
 
@@ -40,3 +40,4 @@ if __name__=='__main__':
     #upload_shapefile('Fukushima', 'test_files/fukushima-food-radiation.zip')
     upload_shapefile('Boston social disorder', 'test_files/social_disorder_in_boston.zip')
     #upload_shapefile('Boston income', 'test_files/income_in_boston_gui.zip')
+    #upload_shapefile('Commonwealth Connect shapefile', 'test_files/CC_reports_2014_pub.zip')
